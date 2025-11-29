@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Производи</title>
+    <link rel="icon" href="IMAGES/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav>
+            <a href="index.html" class="btn">Дома</a>
+            <a href="products.html" class="btn">Производи</a>
+            <a href="about.html" class="btn">За нас</a>
+            <a href="contact.html" class="btn">Контакт</a>
+            <a href="cart.html" class="btn">Кошничка</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="heading">Нашите <span>продукти</span></h1>
+
+        <section class="products">
+            <div class="controls">
+                <input type="text" id="searchInput" placeholder="Пребарај производ..." class="search">
+                <button id="sortPriceBtn" class="btn">Цена ↑↓</button>
+                <button id="sortNameBtn" class="btn">Име A-Z</button>
+            </div>
+
+            <div class="box-container">
+
+                <div class="box">
+                    <div class="image"><img src="IMAGES/pcela1.jpeg" alt="Пчела"></div>
+                    <div class="content">
+                        <h3>Пчела</h3>
+                        <div class="price" data-price="180">180 денари</div>
+                        <button class="add-to-cart" data-name="Пчела" data-price="180">Додади во кошничка</button>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image"><img src="IMAGES/zajak.jpg" alt="Зајаче"></div>
+                    <div class="content">
+                        <h3>Зајаче</h3>
+                        <div class="price" data-price="250">250 денари</div>
+                        <button class="add-to-cart" data-name="Зајаче" data-price="250">Додади во кошничка</button>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image"><img src="IMAGES/zelka.jpg" alt="Желка"></div>
+                    <div class="content">
+                        <h3>Желка</h3>
+                        <div class="price" data-price="280">280 денари</div>
+                        <button class="add-to-cart" data-name="Желка" data-price="280">Додади во кошничка</button>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image"><img src="IMAGES/vinipu.jpg" alt="Вини Пу"></div>
+                    <div class="content">
+                        <h3>Вини Пу</h3>
+                        <div class="price" data-price="280">280 денари</div>
+                        <button class="add-to-cart" data-name="Вини Пу" data-price="280">Додади во кошничка</button>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image"><img src="IMAGES/snesko.jpg" alt="Снешко"></div>
+                    <div class="content">
+                        <h3>Снешко</h3>
+                        <div class="price" data-price="200">200 денари</div>
+                        <button class="add-to-cart" data-name="Снешко" data-price="200">Додади во кошничка</button>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image"><img src="IMAGES/oktopod.jpg" alt="Октопод привезок"></div>
+                    <div class="content">
+                        <h3>Октопод привезок</h3>
+                        <div class="price" data-price="100">100 денари</div>
+                        <button class="add-to-cart" data-name="Октопод привезок" data-price="100">Додади во кошничка</button>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image"><img src="IMAGES/cresi.jpg" alt="Цреши привезок"></div>
+                    <div class="content">
+                        <h3>Цреши привезок</h3>
+                        <div class="price" data-price="100">100 денари</div>
+                        <button class="add-to-cart" data-name="Цреши привезок" data-price="100">Додади во кошничка</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
