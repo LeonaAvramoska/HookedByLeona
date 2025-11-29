@@ -243,5 +243,16 @@
       });
     }
   };
+  function updateCartForm() {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const cartText = cart.map(item => `${item.name} - ${item.price} ден`).join("\n");
+
+    const cartDataField = document.getElementById("cartData");
+    if (cartDataField) {
+        cartDataField.value = cartText;
+    }
+}
+
 
 })();
+
