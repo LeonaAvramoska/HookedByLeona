@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Кошничка</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav>
+      <a href="index.html" class="btn">Дома</a>
+      <a href="products.html" class="btn">Производи</a>
+      <a href="about.html" class="btn">За нас</a>
+      <a href="contact.html" class="btn">Контакт</a>
+      <a href="cart.html" class="btn">Кошничка</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="heading">Кошничка</h1>
+
+    <section class="cart-section">
+      <div id="cartItems"></div>
+
+      <div class="cart-actions">
+        <div class="cart-total">Вкупно: <span id="cartTotal">0</span> денари</div>
+        <button id="clearCartBtn" class="btn">Исчисти кошничка</button>
+        <a href="order.html"><button id="checkoutBtn" class="btn">Нарачај</button></a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Нарачка примена</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="thank-section">
+    <h1>Ви благодарам!</h1>
+    <p>Вашата нарачка е примена. Ќе ве контактираме наскоро.</p>
+    <a href="products.html" class="btn">Назад кон производите</a>
+  </main>
+
+  <script>
+    // Clear cart after successful order (so user returns with empty cart)
+    try {
+      localStorage.removeItem('cart');
+    } catch (err) {
+      console.warn('Could not clear localStorage cart:', err);
+    }
+  </script>
+</body>
+</html>

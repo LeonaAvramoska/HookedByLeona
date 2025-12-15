@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пчела — Hooked by Leona</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Main Menu -->
+    <nav>
+        <a href="index.html" class="btn">Дома</a>
+        <a href="products.html" class="btn">Производи</a>
+        <a href="about.html" class="btn">За нас</a>
+        <a href="contact.html" class="btn">Контакт</a>
+        <a href="cart.html" class="btn">Кошничка</a>
+    </nav>
+
+    <!-- Category Menu -->
+    <div class="category-menu">
+        <button class="category-btn" data-category="all">Сите</button>
+        <button class="category-btn" data-category="играчки">Играчки</button>
+        <button class="category-btn" data-category="привезоци">Привезоци</button>
+        <button class="category-btn" data-category="облека">Облека</button>
+        <button class="category-btn" data-category="декор">Декор</button>
+    </div>
+
+    <main class="product-detail">
+        <!-- Left: Image Carousel -->
+        <div class="carousel">
+            <img id="mainImage" src="IMAGES/pcela1.jpg" alt="Пчела">
+            <div class="carousel-controls">
+                <button id="prevBtn">←</button>
+                <button id="nextBtn">→</button>
+            </div>
+        </div>
+
+        <!-- Right: Product Info -->
+        <div class="product-info">
+            <h2>Пчела</h2>
+            <p class="price">180 денари</p>
+            <p class="care-text">
+                За да го одржувате производот во добра состојба, избегнувајте перење на високи температури.
+            </p>
+            <button class="add-to-cart" data-name="Пчела" data-price="180">Додади во кошничка</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        // Product images array
+        const images = ["IMAGES/pcela1.jpg", "IMAGES/pcela2.jpg"];
+        let current = 0;
+        const mainImg = document.getElementById('mainImage');
+
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            current = (current + 1) % images.length;
+            mainImg.src = images[current];
+        });
+
+        document.getElementById('prevBtn').addEventListener('click', () => {
+            current = (current - 1 + images.length) % images.length;
+            mainImg.src = images[current];
+        });
+    </script>
+</body>
+</html>

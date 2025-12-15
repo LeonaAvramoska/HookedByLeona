@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Производи</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav>
+            <a href="index.html" class="btn">Дома</a>
+            <a href="products.html" class="btn">Производи</a>
+            <a href="about.html" class="btn">За нас</a>
+            <a href="contact.html" class="btn">Контакт</a>
+            <a href="cart.html" class="btn">Кошничка</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="heading">Нашите <span>продукти</span></h1>
+        <div class="category-menu">
+    <button class="category-btn active" data-category="all">Сите</button>
+    <button class="category-btn" data-category="играчки">Играчки</button>
+    <button class="category-btn" data-category="привезоци">Привезоци</button>
+    <button class="category-btn" data-category="облека">Облека</button>
+    <button class="category-btn" data-category="декор">Декор</button>
+</div>
+
+
+        <section class="products">
+            <div class="controls">
+                <input type="text" id="searchInput" placeholder="Пребарај производ..." class="search">
+                <button id="sortPriceBtn" class="btn">Цена ↑↓</button>
+                <button id="sortNameBtn" class="btn">Име A-Z</button>
+            </div>
+
+            <div class="box-container">
+
+                <div class="box" data-category="играчки">
+                    <div class="image"><img src="IMAGES/pcela1.jpg" alt="Пчела"></div>
+                    <div class="content">
+                       <h3><a href="product-pcela.html" class="product-link">Пчела</a></h3>
+                        <div class="price" data-price="180">180 денари</div>
+                        <button class="add-to-cart" data-name="Пчела" data-price="180">Додади во кошничка</button>
+                    </div>
+                </div>
+
+                <div class="box" data-category="играчки">
+                    <div class="image"><img src="IMAGES/zajace1.jpg" alt="Зајаче"></div>
+                    <div class="content">
+                        <h3>Зајаче</h3>
+                        <div class="price" data-price="250">250 денари</div>
+                        <button class="add-to-cart" data-name="Зајаче" data-price="250">Додади во кошничка</button>
+                    </div>
+                </div>
+
+               
+
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
